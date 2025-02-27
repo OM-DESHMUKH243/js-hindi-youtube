@@ -35,3 +35,31 @@ const myfunction = function(){
 console.log(typeof anotherId);
 
 //https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html
+
+
+
+//***************************************
+
+// stack(Primitive), Heap(Non-Primitive)
+
+let myYoutubename = "omsd"
+
+let anothername = myYoutubename
+anothername = "sod"
+
+console.log(myYoutubename);
+console.log(anothername);
+
+let userOne = {
+    email: "user@google.com",
+    upi: 'user@ybl'
+}
+
+let userTwo = userOne
+
+userTwo.email = "om@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
+// stack--Copy and Heap--Reference
